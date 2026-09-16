@@ -8,7 +8,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://sefdief.github.io/kr1-html-css-shop/
+GitHub Pages: https://sefdief.github.io/kr1-html-css-shop-/
 
 ## Структура проекта
 
