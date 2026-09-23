@@ -1,8 +1,33 @@
+// Получаем модальное окно.
+const orderDialog = document.getElementById('order-dialog');
+
 // Получаем форму заявки.
 const orderForm = document.getElementById('order-form');
 
 // Получаем сообщение об успешной отправке.
 const successMessage = document.getElementById('success-message');
+
+// Получаем скрытое поле с выбранным товаром.
+const selectedProduct = document.getElementById('selected-product');
+
+// Получаем все кнопки "Заказать".
+const orderButtons = document.querySelectorAll('.product-card__button');
+
+// Открываем форму при нажатии на "Заказать".
+orderButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    selectedProduct.value = button.dataset.product;
+    orderDialog.showModal();
+  });
+});
+
+// Получаем кнопку "Закрыть".
+const closeOrderDialog = document.getElementById('close-order-dialog');
+
+// Закрываем модальное окно.
+closeOrderDialog.addEventListener('click', () => {
+  orderDialog.close();
+});
 
 // Обрабатываем отправку формы.
 orderForm.addEventListener('submit', (event) => {
