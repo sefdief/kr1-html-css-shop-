@@ -83,23 +83,35 @@ footer {
 }
 
 .site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
   padding: 0;
-  margin: 16px 0 0;
+  margin: var(--space-md) 0 0;
   list-style: none;
 }
+
 
 .site-nav__list li {
   margin-bottom: 8px;
 }
 
 .site-nav__list a {
-  color: #0057b8;
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-primary);
   text-decoration: none;
+  border-radius: var(--radius-sm);
 }
 
+
 .site-nav__list a:hover {
-  text-decoration: underline;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
+
 
 /* ===============================
    4. Компоненты страницы
@@ -266,6 +278,10 @@ a {
   color: var(--color-primary);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
@@ -281,7 +297,18 @@ a:focus-visible {
 }
 
 .breadcrumbs {
-  margin-bottom: var(--space-md);
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+}
+
+.breadcrumbs span::before {
+  content: " / ";
   color: var(--color-muted);
 }
 
@@ -539,6 +566,11 @@ footer p {
 
 .spec-table tbody tr:hover td {
   background-color: var(--color-border);
+}
+
+:target {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
 }
 
 /* Контакты и кнопка «Наверх» (fixed) */
