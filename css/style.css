@@ -275,8 +275,6 @@ footer {
   background-color: var(--color-success-bg);
 }
 
-<<<<<<< Updated upstream
-=======
 /* ===============================
    6. Дополнения для многостраничного сайта
    (всё, что выше, сохранено без изменений)
@@ -460,34 +458,6 @@ footer p {
   margin-top: 0;
 }
 
-.filters-form {
-  display: grid;
-  gap: var(--space-md);
-}
-
-.filters-form fieldset {
-  margin: 0;
-  padding: var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-}
-
-.filters-form legend {
-  font-weight: 700;
-}
-
-.filters-form label {
-  display: block;
-  margin-bottom: var(--space-sm);
-}
-
-.filters-form input[type="number"] {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  font: inherit;
-}
 
 /* Карточки: relative + absolute бейдж */
 .product-card {
@@ -647,4 +617,3 @@ footer p {
     position: static;
   }
 }
->>>>>>> Stashed changes

@@ -46,44 +46,21 @@
     </section>
 
     
-<section class="catalog-layout">
-  <aside class="catalog-filters">
-    <h2>Фильтры</h2>
-
-    <form class="filters-form" action="#" method="get">
-      <fieldset>
-        <legend>Категория</legend>
-
-        <label>
-          <input type="checkbox" name="category" value="all">
-          Все товары
-        </label>
-
-        <label>
-          <input type="checkbox" name="category" value="popular">
-          Популярные
-        </label>
-
-        <label>
-          <input type="checkbox" name="category" value="new">
-          Новинки
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Цена</legend>
-
-        <label for="price-from">От</label>
-        <input id="price-from" name="price-from" type="number" min="0" placeholder="0">
-
-        <label for="price-to">До</label>
-        <input id="price-to" name="price-to" type="number" min="0" placeholder="5000">
-      </fieldset>
-
-      <button class="button" type="submit">Применить</button>
-    </form>
-  </aside>
-
+    <h1 class="page__title">Каталог товаров</h1>
+    <div class="catalog">
+      <aside class="filters" aria-label="Фильтры">
+        <h2 class="filters__title">Фильтры</h2>
+        <h3 class="filters__subtitle">Категория</h3>
+        <ul class="filters__list">
+          <li><label><input type="checkbox" checked> Ноутбуки</label></li>
+          <li><label><input type="checkbox"> Смартфоны</label></li>
+          <li><label><input type="checkbox"> Аудио</label></li>
+          <li><label><input type="checkbox"> Носимые</label></li>
+        </ul>
+        <h3 class="filters__subtitle">Цена</h3>
+        <p class="filters__text">от 4 000 до 50 000 руб.</p>
+        <button class="button button--disabled" type="button" disabled>Применить (скоро)</button>
+      </aside>
 
       <h2>Список товаров</h2>
 
