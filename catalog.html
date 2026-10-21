@@ -11,22 +11,20 @@
   <meta property="og:title" content="Учебный интернет-магазин">
   <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
   <meta property="og:image" content="https://sefdief.github.io/kr1-html-css-shop/images/preview.jpg">
-  <title>Каталог товаров — Учебный интернет-магазин</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <div class="site-header">
-      <a class="site-logo" href="index.html">ShopProject</a>
-
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="index.html#advantages">Преимущества</a></li>
-          <li><a href="index.html#popular">Популярные товары</a></li>
-          <li><a href="index.html#contacts">Обратная связь</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -50,9 +48,8 @@
         <button class="button button--disabled" type="button" disabled>Применить (скоро)</button>
       </aside>
 
-      <h2>Список товаров</h2>
-
-      <section class="catalog__content" aria-label="Список товаров">
+      <section class="catalog__content" aria-labelledby="catalog-title">
+        <h2 class="catalog__title" id="catalog-title">Список товаров</h2>
         <div class="catalog__grid">
 
       <article class="product-card product-card--hit">
@@ -62,8 +59,8 @@
         <p class="product-card__description">Лёгкий ноутбук для учёбы и работы.</p>
         <p class="product-card__price">45 000 руб.</p>
         <div class="product-card__actions">
-          <a class="button button--secondary" href="product.html">Подробнее</a>
-          <button class="button" type="button" data-product="Ноутбук Air 14">Заказать</button>
+          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Ноутбук Air 14">Заказать</button>
         </div>
       </article>
       <article class="product-card product-card--new">
@@ -73,8 +70,8 @@
         <p class="product-card__description">Яркий экран и ёмкий аккумулятор.</p>
         <p class="product-card__price">29 900 руб.</p>
         <div class="product-card__actions">
-          <a class="button button--secondary" href="product.html">Подробнее</a>
-          <button class="button" type="button" data-product="Смартфон Nova">Заказать</button>
+          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Смартфон Nova">Заказать</button>
         </div>
       </article>
       <article class="product-card product-card--discount">
@@ -84,8 +81,8 @@
         <p class="product-card__description">Беспроводные, шумоподавление.</p>
         <p class="product-card__price">7 500 руб.</p>
         <div class="product-card__actions">
-          <a class="button button--secondary" href="product.html">Подробнее</a>
-          <button class="button" type="button" data-product="Наушники Wave">Заказать</button>
+          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Наушники Wave">Заказать</button>
         </div>
       </article>
 
@@ -95,8 +92,8 @@
         <p class="product-card__description">Для чтения, заметок и видео.</p>
         <p class="product-card__price">21 000 руб.</p>
         <div class="product-card__actions">
-          <a class="button button--secondary" href="product.html">Подробнее</a>
-          <button class="button" type="button" data-product="Планшет Tab 10">Заказать</button>
+          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Планшет Tab 10">Заказать</button>
         </div>
       </article>
       <article class="product-card product-card--new">
@@ -106,8 +103,8 @@
         <p class="product-card__description">Пульс, сон, уведомления.</p>
         <p class="product-card__price">9 900 руб.</p>
         <div class="product-card__actions">
-          <a class="button button--secondary" href="product.html">Подробнее</a>
-          <button class="button" type="button" data-product="Умные часы Pulse">Заказать</button>
+          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Умные часы Pulse">Заказать</button>
         </div>
       </article>
       <article class="product-card product-card--discount">
@@ -117,8 +114,8 @@
         <p class="product-card__description">Портативная, защита от воды.</p>
         <p class="product-card__price">4 900 руб.</p>
         <div class="product-card__actions">
-          <a class="button button--secondary" href="product.html">Подробнее</a>
-          <button class="button" type="button" data-product="Колонка Boom">Заказать</button>
+          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Колонка Boom">Заказать</button>
         </div>
       </article>
         </div>
@@ -127,9 +124,9 @@
     <p class="success-message" data-success hidden>Форма успешно отправлена!</p>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  <footer class="site-footer" id="contacts">
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка. Телефон: +7 (900) 000-00-00</p>
   </footer>
 
   <a class="to-top" href="#top">Наверх</a>
@@ -146,7 +143,7 @@
     </div>
     <div class="order-form__field">
       <label class="order-form__label" for="dlg-phone">Телефон</label>
-      <input class="order-form__input" id="dlg-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{{3}}\) \d{{3}}-\d{{2}}-\d{{2}}$" required><small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      <input class="order-form__input" id="dlg-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required><small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
     </div>
     <div class="order-form__field">
       <label class="order-form__label" for="dlg-product">Выбранный товар</label>
