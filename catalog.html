@@ -36,88 +36,103 @@
     <div class="catalog">
       <aside class="filters" aria-label="Фильтры">
         <h2 class="filters__title">Фильтры</h2>
-        <h3 class="filters__subtitle">Категория</h3>
-        <ul class="filters__list">
-          <li><label><input type="checkbox" checked> Ноутбуки</label></li>
-          <li><label><input type="checkbox"> Смартфоны</label></li>
-          <li><label><input type="checkbox"> Аудио</label></li>
-          <li><label><input type="checkbox"> Носимые</label></li>
-        </ul>
         <h3 class="filters__subtitle">Цена</h3>
-        <p class="filters__text">от 4 000 до 50 000 руб.</p>
-        <button class="button button--disabled" type="button" disabled>Применить (скоро)</button>
+          <div class="price-filter">
+            <div class="price-filter__inputs">
+              <span id="price-min">4 000 руб.</span>
+              <span id="price-max">50 000 руб.</span>
+            </div>
+            <input class="price-filter__range" id="price-slider" type="range" min="4000" max="50000" step="1000" value="50000">
+            <p class="filters__text" style="margin-top: 0.5rem;">Максимум: <span id="price-value">50 000</span> руб.</p>
+          </div>
+        <ul class="filters__list">
+          <li><label><input type="checkbox" value="laptops" checked> Ноутбуки</label></li>
+          <li><label><input type="checkbox" value="smartphones" checked> Смартфоны</label></li>
+          <li><label><input type="checkbox" value="audio" checked> Аудио</label></li>
+          <li><label><input type="checkbox" value="wearables" checked> Носимые</label></li>
+        </ul>
       </aside>
 
       <section class="catalog__content" aria-labelledby="catalog-title">
         <h2 class="catalog__title" id="catalog-title">Список товаров</h2>
         <div class="catalog__grid">
+          <article class="product-card product-card--hit" data-category="laptops" data-price="45000">
+            <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Ноутбук Air 14">
+            </div>
+            <h3 class="product-card__title">Ноутбук Air 14</h3>
+            <p class="product-card__description">Лёгкий ноутбук для учёбы и работы.</p>
+            <p class="product-card__price">45 000 руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+              <button class="button product-card__button" type="button" data-product="Ноутбук Air 14">Заказать</button>
+            </div>
+          </article>
 
-      <article class="product-card product-card--hit">
-        <span class="product-card__badge">Хит</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Ноутбук Air 14"></div>
-        <h3 class="product-card__title">Ноутбук Air 14</h3>
-        <p class="product-card__description">Лёгкий ноутбук для учёбы и работы.</p>
-        <p class="product-card__price">45 000 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Ноутбук Air 14">Заказать</button>
-        </div>
-      </article>
-      <article class="product-card product-card--new">
-        <span class="product-card__badge">Новинка</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Смартфон Nova"></div>
-        <h3 class="product-card__title">Смартфон Nova</h3>
-        <p class="product-card__description">Яркий экран и ёмкий аккумулятор.</p>
-        <p class="product-card__price">29 900 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Смартфон Nova">Заказать</button>
-        </div>
-      </article>
-      <article class="product-card product-card--discount">
-        <span class="product-card__badge">Скидка</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Наушники Wave"></div>
-        <h3 class="product-card__title">Наушники Wave</h3>
-        <p class="product-card__description">Беспроводные, шумоподавление.</p>
-        <p class="product-card__price">7 500 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Наушники Wave">Заказать</button>
-        </div>
-      </article>
+          <article class="product-card product-card--new" data-category="smartphones" data-price="29900">
+            <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Смартфон Nova">
+            </div>
+            <h3 class="product-card__title">Смартфон Nova</h3>
+            <p class="product-card__description">Яркий экран и ёмкий аккумулятор.</p>
+            <p class="product-card__price">29 900 руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+              <button class="button product-card__button" type="button" data-product="Смартфон Nova">Заказать</button>
+            </div>
+          </article>
 
-      <article class="product-card">
-        <div class="product-card__image" role="img" aria-label="Изображение: Планшет Tab 10"></div>
-        <h3 class="product-card__title">Планшет Tab 10</h3>
-        <p class="product-card__description">Для чтения, заметок и видео.</p>
-        <p class="product-card__price">21 000 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Планшет Tab 10">Заказать</button>
-        </div>
-      </article>
-      <article class="product-card product-card--new">
-        <span class="product-card__badge">Новинка</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Умные часы Pulse"></div>
-        <h3 class="product-card__title">Умные часы Pulse</h3>
-        <p class="product-card__description">Пульс, сон, уведомления.</p>
-        <p class="product-card__price">9 900 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Умные часы Pulse">Заказать</button>
-        </div>
-      </article>
-      <article class="product-card product-card--discount">
-        <span class="product-card__badge">Скидка</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Колонка Boom"></div>
-        <h3 class="product-card__title">Колонка Boom</h3>
-        <p class="product-card__description">Портативная, защита от воды.</p>
-        <p class="product-card__price">4 900 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Колонка Boom">Заказать</button>
-        </div>
-      </article>
+          <article class="product-card product-card--discount" data-category="audio" data-price="7500">
+            <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Наушники Wave">
+            </div>
+            <h3 class="product-card__title">Наушники Wave</h3>
+            <p class="product-card__description">Беспроводные, шумоподавление.</p>
+            <p class="product-card__price">7 500 руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+              <button class="button product-card__button" type="button" data-product="Наушники Wave">Заказать</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="laptops" data-price="21000">
+            <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80" alt="Планшет Tab 10">
+            </div>
+            <h3 class="product-card__title">Планшет Tab 10</h3>
+            <p class="product-card__description">Для чтения, заметок и видео.</p>
+            <p class="product-card__price">21 000 руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+              <button class="button product-card__button" type="button" data-product="Планшет Tab 10">Заказать</button>
+            </div>
+          </article>
+
+          <article class="product-card product-card--new" data-category="wearables" data-price="9900">
+            <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Умные часы Pulse">
+            </div>
+            <h3 class="product-card__title">Умные часы Pulse</h3>
+            <p class="product-card__description">Пульс, сон, уведомления.</p>
+            <p class="product-card__price">9 900 руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+              <button class="button product-card__button" type="button" data-product="Умные часы Pulse">Заказать</button>
+            </div>
+          </article>
+
+          <article class="product-card product-card--discount" data-category="audio" data-price="4900">
+            <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80" alt="Колонка Boom">
+            </div>
+            <h3 class="product-card__title">Колонка Boom</h3>
+            <p class="product-card__description">Портативная, защита от воды.</p>
+            <p class="product-card__price">4 900 руб.</p>
+            <div class="product-card__actions">
+              <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+              <button class="button product-card__button" type="button" data-product="Колонка Boom">Заказать</button>
+            </div>
+          </article>
         </div>
       </section>
     </div>
@@ -129,41 +144,44 @@
     <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка. Телефон: +7 (900) 000-00-00</p>
   </footer>
 
-  <a class="to-top" href="#top">Наверх</a>
+  <a class="to-top" href="#top" aria-label="Вернуться наверх"></a>
+
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <button class="order-dialog__close" type="button" data-close-dialog aria-label="Закрыть">&times;</button>
     <h2 class="order-dialog__title" id="order-dialog-title">Быстрая заявка</h2>
-  <form class="order-form" id="dialog-form" action="#" method="post" novalidate>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-name">Имя</label>
-      <input class="order-form__input" id="dlg-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-email">E-mail</label>
-      <input class="order-form__input" id="dlg-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-phone">Телефон</label>
-      <input class="order-form__input" id="dlg-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required><small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-product">Выбранный товар</label>
-      <input class="order-form__input" id="dlg-product" name="product" type="text" readonly>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-comment">Комментарий</label>
-      <textarea class="order-form__input" id="dlg-comment" name="comment" rows="4" placeholder="Дополнительная информация"></textarea>
-    </div>
-    <div class="order-form__field order-form__field--checkbox">
-      <label class="order-form__label" for="dlg-agreement">
-        <input id="dlg-agreement" name="agreement" type="checkbox" required>
-        Я согласен на обработку данных
-      </label>
-    </div>
-    <div class="order-form__actions">
-      <button class="button button--secondary" type="button" data-close-dialog>Закрыть</button>
-      <button class="button" type="submit">Отправить заявку</button>
-    </div>
-  </form>
+    <form class="order-form" id="dialog-form" action="#" method="post" novalidate>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-name">Имя</label>
+        <input class="order-form__input" id="dlg-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-email">E-mail</label>
+        <input class="order-form__input" id="dlg-email" name="email" type="email" placeholder="example@mail.ru" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-phone">Телефон</label>
+        <input class="order-form__input" id="dlg-phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-product">Выбранный товар</label>
+        <input class="order-form__input" id="dlg-product" name="product" type="text" readonly>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-comment">Комментарий</label>
+        <textarea class="order-form__input" id="dlg-comment" name="comment" rows="3" placeholder="Дополнительная информация"></textarea>
+      </div>
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__label" for="dlg-agreement">
+          <input id="dlg-agreement" name="agreement" type="checkbox" required>
+          Я согласен на обработку данных
+        </label>
+      </div>
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" data-close-dialog>Закрыть</button>
+        <button class="button" type="submit">Отправить заявку</button>
+      </div>
+    </form>
   </dialog>
 </body>
 </html>
