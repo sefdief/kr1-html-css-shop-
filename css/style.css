@@ -181,6 +181,35 @@ footer {
   cursor: not-allowed;
 }
 
+.button--primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.button--secondary {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.button--secondary:hover {
+  color: var(--color-white);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /*
   Дополнительный информационный блок.
 */
@@ -209,6 +238,44 @@ footer {
 
 .form-field {
   margin-bottom: var(--space-md);
+}
+
+.order-form__field {
+  margin-bottom: var(--space-md);
+}
+
+.order-form__label {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.order-form__input,
+.order-form__select,
+.order-form__textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+.order-form__input:hover,
+.order-form__select:hover,
+.order-form__textarea:hover {
+  border-color: var(--color-primary);
+}
+
+.order-form__input:focus-visible,
+.order-form__select:focus-visible,
+.order-form__textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.order-form__actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 .form-field label {
@@ -342,21 +409,7 @@ footer p {
   margin: 0 auto var(--space-sm);
 }
 
-/* Кнопки: варианты */
-.button--secondary {
-  color: var(--color-primary);
-  background-color: var(--color-white);
-  box-shadow: inset 0 0 0 2px var(--color-primary);
-}
 
-.button--secondary:hover {
-  color: var(--color-white);
-}
-
-.button--disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
 
 /* Главная */
 .hero h1 {
