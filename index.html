@@ -31,60 +31,129 @@
   </header>
 
   <main class="page">
-    <section class="hero">
-      <h1>Учебный интернет-магазин</h1>
-      <p>Электроника для учёбы и работы: подберите товар в каталоге и оставьте заявку за минуту.</p>
-      <div class="hero__actions">
-        <a class="button" href="catalog.html">Перейти в каталог</a>
-        <a class="button button--secondary" href="#popular">Популярные товары</a>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>Учебный интернет-магазин</h1>
+    <p>Электроника для учёбы и работы: подберите товар в каталоге и оставьте заявку за минуту.</p>
+    <div class="hero__actions">
+      <a class="button" href="catalog.html">Перейти в каталог</a>
+      <a class="button button--secondary" href="#popular">Популярные товары</a>
+    </div>
+  </section>
 
-    <section class="section" id="advantages">
-      <h2>Преимущества проекта</h2>
-      <ul class="advantages-list">
-        <li class="advantages-list__item"><h3 class="advantages-list__title">Быстрая доставка</h3><p>Отправляем в день заказа.</p></li>
-        <li class="advantages-list__item"><h3 class="advantages-list__title">Гарантия</h3><p>12 месяцев на всю технику.</p></li>
-        <li class="advantages-list__item"><h3 class="advantages-list__title">Поддержка</h3><p>Отвечаем на вопросы ежедневно.</p></li>
-      </ul>
-    </section>
+    <section class="section advantages" id="advantages">
+  <h2 class="section__title advantages__title">Преимущества проекта</h2>
+  
+  <ul class="advantages-list">
+    <li class="advantages-list__item">
+      <div class="advantages-list__icon" aria-hidden="true">🚀</div>
+      <div class="advantages-list__content">
+        <h3 class="advantages-list__title">Быстрая доставка</h3>
+        <p class="advantages-list__description">Отправляем в день заказа по всей России с отслеживанием по трек-номеру.</p>
+      </div>
+    </li>
+
+    <li class="advantages-list__item">
+      <div class="advantages-list__icon" aria-hidden="true">🛡️</div>
+      <div class="advantages-list__content">
+        <h3 class="advantages-list__title">Гарантия качества</h3>
+        <p class="advantages-list__description">12 месяцев официальной гарантии и бесплатное обслуживание на всю технику.</p>
+      </div>
+    </li>
+
+    <li class="advantages-list__item">
+      <div class="advantages-list__icon" aria-hidden="true">💬</div>
+      <div class="advantages-list__content">
+        <h3 class="advantages-list__title">Поддержка 24/7</h3>
+        <p class="advantages-list__description">Отвечаем на вопросы ежедневно, помогаем с выбором и настройкой устройств.</p>
+      </div>
+    </li>
+  </ul>
+</section>
 
     <section class="section" id="popular">
       <h2>Популярные товары</h2>
       <div class="products-grid">
-      <article class="product-card product-card--hit">
-        <span class="product-card__badge">Хит</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Ноутбук Air 14"></div>
-        <h3 class="product-card__title">Ноутбук Air 14</h3>
-        <p class="product-card__description">Лёгкий ноутбук для учёбы и работы.</p>
-        <p class="product-card__price">45 000 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Ноутбук Air 14">Заказать</button>
-        </div>
-      </article>
-      <article class="product-card product-card--new">
-        <span class="product-card__badge">Новинка</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Смартфон Nova"></div>
-        <h3 class="product-card__title">Смартфон Nova</h3>
-        <p class="product-card__description">Яркий экран и ёмкий аккумулятор.</p>
-        <p class="product-card__price">29 900 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Смартфон Nova">Заказать</button>
-        </div>
-      </article>
-      <article class="product-card product-card--discount">
-        <span class="product-card__badge">Скидка</span>
-        <div class="product-card__image" role="img" aria-label="Изображение: Наушники Wave"></div>
-        <h3 class="product-card__title">Наушники Wave</h3>
-        <p class="product-card__description">Беспроводные, шумоподавление.</p>
-        <p class="product-card__price">7 500 руб.</p>
-        <div class="product-card__actions">
-          <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Наушники Wave">Заказать</button>
-        </div>
-      </article>
+        <article class="product-card product-card--hit">
+          <div class="product-card__image" role="img" aria-label="Изображение: Ноутбук Air 14"></div>
+          <h3 class="product-card__title">Ноутбук Air 14</h3>
+          <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Ноутбук Air 14">
+          </div>
+          <p class="product-card__description">Лёгкий ноутбук для учёбы и работы.</p>
+          <p class="product-card__price">45 000 руб.</p>
+          <div class="product-card__actions">
+            <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+            <button class="button product-card__button" type="button" data-product="Ноутбук Air 14">Заказать</button>
+          </div>
+        </article>
+        <article class="product-card product-card--new">
+          <div class="product-card__image" role="img" aria-label="Изображение: Смартфон Nova"></div>
+          <h3 class="product-card__title">Смартфон Nova</h3>
+          <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Смартфон Nova">
+            </div>
+          <p class="product-card__description">Яркий экран и ёмкий аккумулятор.</p>
+          <p class="product-card__price">29 900 руб.</p>
+          <div class="product-card__actions">
+            <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+            <button class="button product-card__button" type="button" data-product="Смартфон Nova">Заказать</button>
+          </div>
+        </article>
+        <article class="product-card product-card--discount">
+          <div class="product-card__image" role="img" aria-label="Изображение: Наушники Wave"></div>
+          <h3 class="product-card__title">Наушники Wave</h3>
+           <div class="product-card__image-container">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Наушники Wave">
+            </div>
+          <p class="product-card__description">Беспроводные, шумоподавление.</p>
+          <p class="product-card__price">7 500 руб.</p>
+          <div class="product-card__actions">
+            <a class="button button--secondary product-card__button" href="product.html">Подробнее</a>
+            <button class="button product-card__button" type="button" data-product="Наушники Wave">Заказать</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- БЛОК ОТЗЫВОВ -->
+    <section class="section reviews" id="reviews">
+      <h2 class="section__title">Отзывы покупателей</h2>
+      <div class="reviews__grid">
+        <article class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">АВ</div>
+            <div>
+              <p class="review-card__author">Алексей Васильев</p>
+              <p class="review-card__date">12 октября 2026</p>
+            </div>
+          </div>
+          <div class="review-card__rating">★★★★★</div>
+          <p class="review-card__text">Заказывал ноутбук Air 14. Доставили очень быстро! Качество сборки на высоте, батарею держит отлично.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">ЕК</div>
+            <div>
+              <p class="review-card__author">Екатерина Климова</p>
+              <p class="review-card__date">05 октября 2026</p>
+            </div>
+          </div>
+          <div class="review-card__rating">★★★★★</div>
+          <p class="review-card__text">Отличные наушники Wave! Звук чистый, шумоподавление работает великолепно в метро. Рекомендую!</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">МП</div>
+            <div>
+              <p class="review-card__author">Михаил Петров</p>
+              <p class="review-card__date">28 сентября 2026</p>
+            </div>
+          </div>
+          <div class="review-card__rating">★★★★☆</div>
+          <p class="review-card__text">Смартфон Nova оправдал ожидания. За свои деньги отличный вариант, экран очень яркий.</p>
+        </article>
       </div>
     </section>
 
@@ -100,41 +169,46 @@
     <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка. Телефон: +7 (900) 000-00-00</p>
   </footer>
 
-  <a class="to-top" href="#top">Наверх</a>
+  <!-- ФИКСИРОВАННАЯ КНОПКА «НАВЕРХ» -->
+  <a class="to-top" href="#top" aria-label="Вернуться наверх страницы"></a>
+
+  <!-- УЛУЧШЕННОЕ МОДАЛЬНОЕ ОКНО -->
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <button class="order-dialog__close" type="button" data-close-dialog aria-label="Закрыть модальное окно">&times;</button>
     <h2 class="order-dialog__title" id="order-dialog-title">Быстрая заявка</h2>
-  <form class="order-form" id="dialog-form" action="#" method="post" novalidate>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-name">Имя</label>
-      <input class="order-form__input" id="dlg-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-email">E-mail</label>
-      <input class="order-form__input" id="dlg-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-phone">Телефон</label>
-      <input class="order-form__input" id="dlg-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required><small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-product">Выбранный товар</label>
-      <input class="order-form__input" id="dlg-product" name="product" type="text" readonly>
-    </div>
-    <div class="order-form__field">
-      <label class="order-form__label" for="dlg-comment">Комментарий</label>
-      <textarea class="order-form__input" id="dlg-comment" name="comment" rows="4" placeholder="Дополнительная информация"></textarea>
-    </div>
-    <div class="order-form__field order-form__field--checkbox">
-      <label class="order-form__label" for="dlg-agreement">
-        <input id="dlg-agreement" name="agreement" type="checkbox" required>
-        Я согласен на обработку данных
-      </label>
-    </div>
-    <div class="order-form__actions">
-      <button class="button button--secondary" type="button" data-close-dialog>Закрыть</button>
-      <button class="button" type="submit">Отправить заявку</button>
-    </div>
-  </form>
+    <form class="order-form" id="dialog-form" action="#" method="post" novalidate>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-name">Имя</label>
+        <input class="order-form__input" id="dlg-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-email">E-mail</label>
+        <input class="order-form__input" id="dlg-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-phone">Телефон</label>
+        <input class="order-form__input" id="dlg-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-product">Выбранный товар</label>
+        <input class="order-form__input" id="dlg-product" name="product" type="text" readonly>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="dlg-comment">Комментарий</label>
+        <textarea class="order-form__input" id="dlg-comment" name="comment" rows="4" placeholder="Дополнительная информация"></textarea>
+      </div>
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__label" for="dlg-agreement">
+          <input id="dlg-agreement" name="agreement" type="checkbox" required>
+          Я согласен на обработку данных
+        </label>
+      </div>
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" data-close-dialog>Отмена</button>
+        <button class="button" type="submit">Отправить заявку</button>
+      </div>
+    </form>
   </dialog>
 </body>
 </html>

@@ -17,15 +17,7 @@
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-        </ul>
+        <ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li><li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul>
       </nav>
     </div>
   </header>
@@ -53,6 +45,48 @@
           <tr><th scope="row">Гарантия</th><td>12 месяцев</td></tr>
         </tbody>
       </table>
+    </section>
+
+    <!-- Блок отзывов к товару -->
+    <section class="section reviews">
+      <h2 class="section__title">Отзывы о товаре</h2>
+      <div class="reviews__grid">
+        <article class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">АВ</div>
+            <div>
+              <p class="review-card__author">Алексей Васильев</p>
+              <p class="review-card__date">12 октября 2026</p>
+            </div>
+          </div>
+          <div class="review-card__rating">★★★★★</div>
+          <p class="review-card__text">Отличный ноутбук для работы и учебы!</p>
+        </article>
+      </div>
+
+      <div class="reviews__add-form" style="margin-top: 2rem;">
+        <h3 class="reviews__add-title">Написать отзыв</h3>
+        <form class="order-form" id="review-form" action="#" method="post" novalidate>
+          <div class="order-form__field">
+            <label class="order-form__label" for="review-author">Имя</label>
+            <input class="order-form__input" id="review-author" name="author" type="text" required minlength="2">
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="review-rating">Оценка</label>
+            <select class="order-form__input" id="review-rating" name="rating" required>
+              <option value="">Выберите оценку</option>
+              <option value="5">★★★★★ (5)</option>
+              <option value="4">★★★★☆ (4)</option>
+              <option value="3">★★★☆☆ (3)</option>
+            </select>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="review-text">Комментарий</label>
+            <textarea class="order-form__input" id="review-text" name="text" rows="3" required></textarea>
+          </div>
+          <button class="button" type="submit">Отправить отзыв</button>
+        </form>
+      </div>
     </section>
   </main>
 
