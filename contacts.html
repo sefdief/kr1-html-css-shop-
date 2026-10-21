@@ -10,20 +10,21 @@
   <meta property="og:image" content="https://sefdief.github.io/kr1-html-css-shop/images/preview.jpg">
   <title>Контакты — Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-  <header>
-    <div class="site-header">
-      <a class="site-logo" href="index.html">ShopProject</a>
-
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="index.html#advantages">Преимущества</a></li>
-          <li><a href="index.html#popular">Популярные товары</a></li>
-          <li><a href="index.html#contacts">Обратная связь</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -32,17 +33,17 @@
 
   <main class="page">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a href="index.html">Главная</a>
+      <a href="index.html">Главная</a> /
       <span>Контакты</span>
     </nav>
 
     <section class="section">
-      <h1>Контакты</h1>
+      <h1 class="page__title">Контакты</h1>
       <p>
         Здесь размещается контактная информация учебного интернет-магазина.
       </p>
 
-      <ul>
+      <ul class="contacts__list">
         <li>Телефон: +7 (900) 000-00-00</li>
         <li>E-mail: info@example.com</li>
         <li>Адрес: г. Москва, учебный проект</li>
@@ -62,10 +63,10 @@
     </div>
     <div class="order-form__field">
       <label class="order-form__label" for="contact-phone">Телефон</label>
-      <input class="order-form__input" id="contact-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{{3}}\) \d{{3}}-\d{{2}}-\d{{2}}$" required>
+      <input class="order-form__input" id="contact-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required><small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
     </div>
-    <div class="order-form-field"> 
-            <label class="order-form__label" for="contact-topic">Тема заявки</label>
+    <div class="order-form__field">
+      <label class="order-form__label" for="contact-topic">Тема заявки</label>
       <select class="order-form__input" id="contact-topic" name="topic" required><option value="">Выберите тему</option><option>Заказ товара</option><option>Консультация</option><option>Доставка</option></select>
     </div>
     <div class="order-form__field">
@@ -85,12 +86,11 @@
   </form>
         <p class="success-message" data-success hidden>Форма успешно отправлена!</p>
       </section>
-    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  <footer class="site-footer" id="contacts">
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка. Телефон: +7 (900) 000-00-00</p>
   </footer>
 
   <a class="to-top" href="#top">Наверх</a>
