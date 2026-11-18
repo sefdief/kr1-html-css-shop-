@@ -1,0 +1,28 @@
+GreenRoom — источники фотографий
+=================================
+
+Фотографии подключены по прямым HTTPS-ссылкам с сайтов-источников и загружаются при открытии сайта.
+Для их отображения требуется подключение к интернету. Файлы изображений не копируются в архив.
+
+Список источников:
+- Монстера делициоза — Allegro: https://allegro.pl/oferta/monstera-deliciosa-geste-ogromne-dziurawe-sercowate-liscie-dzungla-w-domu-17760754437
+- Монстера минима (Rhaphidophora tetrasperma) — Plantsmith: https://plantsmith.net.au/products/rhaphidophora-tetrasperma-mini-monstera-12cm-pot
+- Монстера вариегатная — Gardeners Dream: https://www.gardenersdream.co.uk/products/variegated-monstera-deliciosa
+- Монстера Адансона / Monkey Leaf — Ricardo: https://www.ricardo.ch/de/a/monstera-adansonii-%28monkey-leaf%29-1212451004/
+- Сансевиерия — Kenh14: https://kenh14.vn/5-loai-cay-hut-formaldehyde-manh-nhat-nasa-khuyen-trong-215252712135636023.chn
+- Спатифиллум — Plant Daddy: https://plantdaddy.com.au/products/spathiphyllum-peace-lily
+- Эпипремнум — Potclay: https://www.potclay.com/collections/office-plants/products/epipremnum-aureum-golden
+- Филодендрон Биркин — grow urban: https://growurban.uk/products/philodendron-birkin-21cm-pot
+- Филодендрон лазящий — Pille Gartenwelt: https://www.pille-gartenwelt.de/products/philodendron-scandens-o12cm-%E2%86%9515cm
+- Фикус эластика — Plantasjen: https://plantasjen.no/no/p/ficus-elastica-robusta-17-cm-560777
+- Фикус лирата — The Boma Garden Centre: https://www.bomagardencentre.co.uk/product/ficus-lyrata-pot-size-27cm-fiddle-leaf-fig
+- Замиокулькас — grow urban: https://growurban.uk/products/zamioculcas-zamifolia-19cm-pot-85cm-height
+- Калатея орбифолия — Outside In: https://outsideinco.com/products/calathea-orbifolia-6-inch
+- Хлорофитум — FlorAccess: https://www.floraccess.com/de/product/64973/chlorophytum-comosum-variegatum/
+
+Примечание о правах:
+Страница-источник не всегда означает разрешение на повторное размещение фотографии.
+Перед публичной публикацией проверьте лицензию каждого изображения или замените его
+собственными фотографиями / изображениями с явно разрешающей лицензией.
+Варианты «Монстера Адансона» и «Манки Лиф» используют одно фото, так как это близкие
+торговые обозначения одной группы растений.
