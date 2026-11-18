@@ -1,0 +1,171 @@
+/* GreenRoom — общие стили сайта */
+:root{--green:#28533d;--green-dark:#193b2b;--green-mid:#6e9275;--pale:#edf2e9;--cream:#faf9f5;--ink:#25372c;--muted:#6d796f;--line:#e3e9df;--white:#fff;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.65}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{max-width:1160px}
+.site-header{position:fixed;top:0;left: 0;width: 100%;z-index:1000;background:rgba(255,255,255,.96);border-bottom:1px solid rgba(40,83,61,.08);backdrop-filter:blur(12px)}.header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font:700 1.75rem var(--serif);color:var(--green);letter-spacing:-1px}.brand span{color:#81977b}.main-nav{display:flex;align-items:center;gap:28px}.main-nav a{font-size:.92rem;color:#526157;transition:color .2s}.main-nav a:hover,.main-nav a.active{color:var(--green);font-weight:700}.nav-toggle{display:none;border:1px solid var(--line);background:white;border-radius:10px;padding:8px 12px;color:var(--green)}
+.hero{background:var(--pale);overflow:hidden}.hero__inner{min-height:570px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px;padding-top:55px;padding-bottom:75px;position:relative}.hero__copy{max-width:550px}.eyebrow{display:block;color:var(--green-mid);font-size:.72rem;font-weight:700;letter-spacing:.17em;margin-bottom:14px}.hero h1,.page-hero h1{font:700 clamp(2.7rem,5vw,4.7rem)/1.08 var(--serif);letter-spacing:-.04em;color:var(--green-dark);margin:0 0 22px}.hero h1 em{color:#789678;font-weight:600}.hero__copy p{font-size:1.08rem;color:#5d6b60;max-width:500px;margin-bottom:28px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:12px 21px;border:1px solid var(--green);border-radius:30px;background:var(--green);color:white;font-weight:600;font-size:.9rem;transition:.2s}.button:hover{background:var(--green-dark);border-color:var(--green-dark);color:white;transform:translateY(-1px)}.button--light{background:transparent;color:var(--green)}.button--light:hover{color:white}.hero__visual{min-height:390px;border-radius:48% 48% 16px 16px}.hero__note{position:absolute;bottom:24px;left:12px;right:12px;display:flex;justify-content:space-between;color:#7b897d;font-size:.75rem;letter-spacing:.08em}
+.image-placeholder{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#dfe9dc,#f2f3e9 55%,#d4e1d2);border:1px solid #cfddce;color:#66806a;text-align:center}.image-placeholder:before,.plant-image:before{content:"";position:absolute;inset:12%;border:1px dashed rgba(67,105,72,.35);border-radius:inherit;pointer-events:none}.image-placeholder span{position:relative;padding:10px 16px;border-radius:30px;background:rgba(255,255,255,.72);font-size:.78rem;font-weight:600;letter-spacing:.04em}.section{padding:88px 0}.section--soft{background:#f0f3ec}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:34px}.section-heading h2,.about-strip h2,.about-layout h2,.form-intro h2{font:700 clamp(2rem,3.5vw,3rem)/1.15 var(--serif);color:var(--green-dark);margin:0}.section-heading>p{max-width:350px;color:var(--muted);margin:0}.section-heading--row{align-items:end}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature-card{padding:30px;border:1px solid var(--line);border-radius:16px;background:#fff;min-height:235px}.feature-card__icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--pale);color:var(--green);font-size:2.5rem;margin-bottom:20px}.feature-card h3{font:600 1.3rem var(--serif);margin-bottom:8px}.feature-card p{color:var(--muted);font-size:.92rem}.text-link{color:var(--green);font-weight:700;font-size:.9rem}.text-link:hover{text-decoration:underline;text-underline-offset:4px}
+.plant-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}.plant-card{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden;transition:transform .2s,box-shadow .2s;min-width:0}.plant-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(31,57,40,.09)}.plant-image{height:220px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(145deg,#e1eadf,#f4f3e9);border-bottom:1px solid var(--line);color:#718b73}.plant-image span{font-size:.78rem;font-weight:600;background:rgba(255,255,255,.75);padding:8px 13px;border-radius:30px;z-index:1}.plant-image img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.plant-card__body{padding:18px}.plant-card__group{color:#819080;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700}.plant-card h3{font:600 1.25rem var(--serif);margin:7px 0}.plant-card p{font-size:.87rem;color:var(--muted);min-height:46px;margin-bottom:13px}.plant-card .text-link{display:inline-block}
+.about-strip{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.about-strip__visual{min-height:350px;border-radius:18px}.about-strip__copy p,.about-layout p{color:var(--muted);margin:20px 0 25px}.page-hero{padding:76px 0 65px;background:var(--pale)}.page-hero h1{font-size:clamp(2.6rem,5vw,4rem);margin-bottom:15px}.page-hero p{max-width:620px;color:var(--muted);font-size:1.05rem;margin:0}
+.site-footer{background:var(--green-dark);color:#edf2e9;padding:46px 0 22px}.footer-main{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:35px;padding-bottom:32px}.brand--footer{color:white}.footer-tagline{color:#c3d0c4;font-size:.86rem;margin:8px 0 0}.footer-title{font-size:.78rem;text-transform:uppercase;letter-spacing:.13em;color:#a8bea9;margin:5px 0 14px}.footer-links{display:flex;flex-direction:column;gap:8px}.footer-links a,.footer-contact a{font-size:.9rem;color:#edf2e9}.footer-links a:hover,.footer-contact a:hover{text-decoration:underline}.footer-contact p{margin:0 0 8px}.footer-bottom{border-top:1px solid rgba(255,255,255,.18);padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:#bdcbbf;font-size:.78rem}
+.back-to-top{position:fixed;right:24px;bottom:24px;z-index:900;width:48px;height:48px;border:0;border-radius:50%;background:var(--green);color:white;font-size:1.3rem;box-shadow:0 8px 22px #193b2b33;opacity:0;visibility:hidden;transform:translateY(10px);transition:.2s}.back-to-top.is-visible{opacity:1;visibility:visible;transform:translateY(0)}.back-to-top:hover{background:var(--green-dark)}
+.catalog-tools{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:22px}.search-box{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:30px;padding:0 18px;min-width:min(100%,320px);height:48px;color:#78907b}.search-box input{border:0;outline:0;background:transparent;width:100%;font:inherit;font-size:.9rem}.filter-list{display:flex;flex-wrap:wrap;gap:8px}.filter-chip{border:1px solid var(--line);border-radius:30px;background:white;padding:9px 15px;color:#617064;font:600 .82rem var(--sans);cursor:pointer}.filter-chip.active,.filter-chip:hover{background:var(--green);border-color:var(--green);color:white}.results-count{color:var(--muted);font-size:.85rem;margin-bottom:18px}.empty-state{text-align:center;padding:50px;color:var(--muted);border:1px dashed #bdcdbd;border-radius:14px}.suggest-banner{margin-top:65px;padding:32px 36px;border-radius:18px;background:var(--pale);display:flex;align-items:center;justify-content:space-between;gap:24px}.suggest-banner h2{font:600 1.8rem var(--serif);color:var(--green-dark);margin:0 0 8px}.suggest-banner p{color:var(--muted);margin:0}
+.advice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.advice-card{position:relative;background:white;border:1px solid var(--line);border-radius:16px;padding:28px;min-height:320px}.advice-card__number{position:absolute;right:25px;top:20px;color:#b8c8b7;font:600 1.7rem var(--serif)}.advice-card__icon{font-size:3rem;color:var(--green);margin-bottom:18px}.advice-card h2{font:600 1.4rem var(--serif);color:var(--green-dark)}.advice-card p{color:var(--muted);font-size:.9rem}.advice-tip{border-left:3px solid #9bb49a;padding:9px 0 9px 13px;color:var(--green);font-size:.82rem;margin-top:16px}
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-photo{min-height:430px;border-radius:18px}
+.form-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.form-intro p{color:var(--muted);margin:20px 0}.form-note{background:var(--pale);padding:18px;border-radius:12px;color:var(--green);font-size:.88rem}.suggest-form{background:white;border:1px solid var(--line);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:9px}.suggest-form label{font-weight:700;font-size:.88rem;margin-top:8px}.suggest-form label span{color:#b46b55}.suggest-form input,.suggest-form textarea{width:100%;border:1px solid #dce4da;border-radius:9px;padding:12px 14px;font:inherit;font-size:.9rem;outline:none;background:#fdfefc}.suggest-form input:focus,.suggest-form textarea:focus{border-color:#789678;box-shadow:0 0 0 3px #78967822}.suggest-form textarea{resize:vertical}.suggest-form button{align-self:flex-start;margin-top:12px}.form-status{font-size:.85rem;color:var(--green);margin:0}
+.plant-detail__top{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center;margin-bottom:55px}.plant-detail__image{height:440px;border-radius:18px}.plant-detail__title{font:700 clamp(2.4rem,4vw,3.8rem)/1.1 var(--serif);color:var(--green-dark);margin:0 0 8px}.plant-detail__latin{color:#829083;font-style:italic;margin-bottom:18px}.plant-detail__description{color:var(--muted);font-size:1.02rem}.plant-detail__group{display:inline-block;border-radius:30px;background:var(--pale);color:var(--green);padding:6px 13px;font-size:.78rem;font-weight:700;margin-bottom:18px}.care-panel{background:#f0f3ec;border-radius:18px;padding:34px}.care-panel h2{font:600 2rem var(--serif);color:var(--green-dark);margin-bottom:8px}.care-panel>p{color:var(--muted);margin-bottom:28px}.care-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.metric{background:white;border:1px solid var(--line);border-radius:13px;padding:20px}.metric__head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}.metric__name{font-weight:700}.metric__value{font-size:.78rem;color:var(--green);font-weight:700}.segmented-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:10px}.segment{height:9px;border-radius:5px;background:#e5ebe2}.segment.filled{background:#6f9875}.metric small{color:var(--muted);font-size:.8rem}.plant-note{margin-top:24px;padding:18px 20px;background:white;border-radius:12px;color:#5f6f62;font-size:.88rem}.detail-back{display:inline-block;margin-bottom:28px;color:var(--green);font-weight:700}
+@media(max-width:900px){.plant-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero__inner{gap:25px}.hero__visual{min-height:330px}.footer-main{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.advice-grid{grid-template-columns:repeat(2,1fr)}.form-layout{gap:35px}.plant-detail__top{gap:30px}}
+@media(max-width:700px){.header-inner{min-height:70px;flex-wrap:wrap}.nav-toggle{display:block}.main-nav{display:none;order:3;width:100%;padding:0 0 17px;flex-direction:column;align-items:flex-start;gap:13px}.main-nav.is-open{display:flex}.hero__inner{grid-template-columns:1fr;padding-top:55px;padding-bottom:75px}.hero__visual{min-height:270px;grid-row:1}.hero__copy{grid-row:2}.hero__note{bottom:20px}.section{padding:62px 0}.section-heading,.section-heading--row{align-items:flex-start;flex-direction:column}.feature-grid,.about-strip,.about-layout,.form-layout,.plant-detail__top{grid-template-columns:1fr}.about-strip{gap:30px}.about-strip__visual{min-height:260px}.advice-grid{grid-template-columns:1fr}.advice-card{min-height:0}.footer-main{grid-template-columns:1fr;gap:25px}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;gap:7px}.suggest-banner{align-items:flex-start;flex-direction:column;padding:26px}.plant-detail__image{height:320px}.care-metrics{grid-template-columns:1fr}.care-panel{padding:22px}.form-layout{gap:28px}.suggest-form{padding:23px}}
+@media(max-width:480px){.plant-grid{grid-template-columns:1fr}.plant-image{height:245px}.filter-list{width:100%}.filter-chip{font-size:.76rem;padding:8px 11px}.search-box{width:100%}.hero h1{font-size:2.65rem}.back-to-top{right:15px;bottom:15px}}
+
+
+/* Двухуровневый каталог: сначала род, затем виды */
+.genus-card{display:flex;flex-direction:column;text-align:left;padding:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;color:inherit;cursor:pointer;min-width:0;transition:transform .2s,box-shadow .2s}
+.genus-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(31,57,40,.09)}
+.genus-card__visual{height:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#e1eadf,#f4f3e9);font-size:3.5rem}
+.genus-card__body{display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:18px}
+.genus-card__body strong{font:600 1.35rem var(--serif);color:var(--green-dark)}
+.genus-card__body small,.genus-card__examples{color:var(--muted);font-size:.82rem}
+.genus-card__examples{min-height:38px}
+.genus-card .text-link{font-size:.88rem;font-weight:700;color:var(--green);margin-top:5px}
+.catalog-back{border:0;background:transparent;padding:0;margin:0 0 12px;font:700 .9rem var(--sans);cursor:pointer}
+.plant-note+.plant-note{margin-top:12px}
+
+
+/* Реальные фотографии растений */
+.plant-image img,.plant-detail__image img,.genus-card__visual img,.hero__visual img{
+  display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0;
+}
+.plant-image img{transition:transform .35s ease}
+.plant-card:hover .plant-image img{transform:scale(1.04)}
+.plant-detail__image{position:relative;overflow:hidden;background:#e8eee5;border-radius:18px}
+.genus-card__visual{position:relative;display:block;height:150px;overflow:hidden;padding:0}
+.genus-card__visual img{object-position:center}
+.hero__visual{position:relative;overflow:hidden}
+.hero__visual img{object-position:center 45%}
+
+
+/* Фотография на странице «О проекте» */
+.about-photo{position:relative;overflow:hidden;min-height:360px;border-radius:22px;background:#e8eee5}
+.about-photo img{display:block;width:100%;height:100%;min-height:360px;object-fit:cover;position:absolute;inset:0}
+
+/* Иконки svg */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer-socials a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.footer-socials a:hover {
+    background: #81977b;
+    transform: translateY(-3px);
+}
+
+.footer-socials svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* Оформление блока «Как мы работаем» */
+
+#principles .text-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 65px;
+    position: relative;
+    margin-top: 55px;
+}
+
+#principles .text-columns::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+    background: var(--line);
+}
+
+#principles .text-columns h3 {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--green-dark);
+    margin: 0 0 8px;
+    padding-bottom: 17px;
+    position: relative;
+}
+
+#principles .text-columns h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--green-mid);
+}
+
+#principles .text-columns h3:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#principles .text-columns p {
+    font-family: var(--sans);
+    font-size: .96rem;
+    line-height: 1.9;
+    letter-spacing: .01em;
+    color: var(--muted);
+    margin: 0;
+}
+
+#principles .text-columns p:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#principles .text-columns p:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* Адаптация для телефонов */
+
+@media (max-width: 700px) {
+    #principles .text-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        margin-top: 35px;
+    }
+
+    #principles .text-columns::before {
+        display: none;
+    }
+
+    #principles .text-columns h3 {
+        font-size: 1.6rem;
+        margin-top: 25px;
+    }
+
+    #principles .text-columns p {
+        font-size: .92rem;
+        line-height: 1.8;
+    }
+}
+
